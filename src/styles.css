@@ -1,0 +1,193 @@
+body {
+  background: #181c24;
+  color: #e0e6f0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-futurista {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #23283a;
+  border-radius: 18px;
+  box-shadow: 0 0 24px #0ff2, 0 0 2px #0ff4;
+  padding: 32px 24px 24px 24px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #00ffe7;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.controles-futurista {
+  margin-bottom: 18px;
+  background: #23283a;
+  border-radius: 12px;
+  padding: 18px 16px 10px 16px;
+  box-shadow: 0 0 8px #0ff4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fila-controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 0;
+}
+.fila-controles input[type="number"],
+.fila-controles select {
+  min-width: 90px;
+  max-width: 120px;
+  padding: 4px 8px;
+  font-size: 0.98em;
+  border-radius: 8px;
+  border: 1.5px solid #00ffe7;
+  background: #1a1e2a;
+  color: #00ffe7;
+  outline: none;
+  box-shadow: 0 0 6px #00ffe733;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.fila-controles input[type="number"]:focus,
+.fila-controles select:focus {
+  box-shadow: 0 0 12px #00ffe7, 0 0 2px #00ffe7;
+  border: 1.5px solid #00ffe7;
+}
+.fila-controles button {
+  min-width: 120px;
+  padding: 6px 12px;
+  font-size: 1em;
+  margin-top: 2px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #00ffe7 0%, #0ff 100%);
+  color: #181c24;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ffe7, 0 0 2px #00ffe7;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.fila-controles button:hover {
+  background: linear-gradient(90deg, #0ff 0%, #00ffe7 100%);
+  box-shadow: 0 0 16px #00ffe7, 0 0 4px #00ffe7;
+}
+.ejecutar-btn {
+  background: linear-gradient(90deg, #00ff99 0%, #00ffe7 100%) !important;
+  color: #181c24 !important;
+}
+@media (max-width: 700px) {
+  .app-futurista {
+    padding: 10px 2vw;
+  }
+  .controles-futurista {
+    padding: 10px 2vw 6px 2vw;
+  }
+  .fila-controles {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .fila-controles button, .fila-controles input, .fila-controles select {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+.tabla-futurista table, .resultados-futurista table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  background: #181c24;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1em;
+}
+.tabla-futurista th, .tabla-futurista td, .resultados-futurista th, .resultados-futurista td {
+  border: 1px solid #00ffe7;
+  padding: 6px 4px;
+  text-align: center;
+}
+.tabla-futurista th, .resultados-futurista th {
+  background: #23283a;
+  color: #00ffe7;
+  font-size: 1.05em;
+}
+
+.timeline-futurista {
+  margin: 24px 0 18px 0;
+  background: #181c24;
+  border-radius: 12px;
+  padding: 18px 10px;
+  box-shadow: 0 0 12px #0ff4;
+}
+.timeline-canales {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.canal-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.canal-label {
+  min-width: 80px;
+  color: #00ffe7;
+  font-weight: bold;
+}
+.timeline-bar {
+  display: flex;
+  gap: 2px;
+}
+.timeline-cell {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #23283a;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid #00ffe722;
+  transition: background 0.2s, color 0.2s;
+}
+.timeline-cell.activo {
+  color: #181c24;
+  box-shadow: 0 0 8px #00ffe7;
+}
+
+:root {
+  --color-p0: #00ffe7;
+  --color-p1: #00ff99;
+  --color-p2: #ff00e7;
+  --color-p3: #ffb300;
+  --color-p4: #ff003c;
+}
+
+.timeline-paso {
+  text-align: right;
+  color: #00ffe7;
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+
+.resultados-futurista {
+  margin-top: 24px;
+  background: #23283a;
+  border-radius: 12px;
+  padding: 18px 10px;
+  box-shadow: 0 0 12px #0ff4;
+}
+.exportar-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+} 
